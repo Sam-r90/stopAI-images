@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        fetch("instaUrl.json").then(response => response.json()).then(urls => {
+                window.location.replace(urls[Math.floor(Math.random() * urls.length)])
+            });
+                
+        </script>
+    </head>
+</html>
